@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>道生态 · 窗口</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f9fafc;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            padding: 40px 35px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 350;
+            text-align: center;
+            margin: 0 0 0.2em;
+            color: #0f172a;
+        }
+        .sub {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #475569;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.5em;
+            margin-bottom: 2em;
+        }
+        .intro {
+            font-size: 1.1rem;
+            background: #f1f5f9;
+            border-radius: 24px;
+            padding: 28px;
+            margin-bottom: 2.5em;
+        }
+        .intro p {
+            margin: 0.8em 0;
+        }
+        .intro strong {
+            color: #1e293b;
+        }
+        .notice {
+            font-size: 0.9rem;
+            color: #64748b;
+            background: #f8fafc;
+            border-left: 4px solid #94a3b8;
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin: 2em 0 1.5em;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.8em;
+            margin-top: 2.5em;
+        }
+        .back-link {
+            text-align: center;
+            margin: 2em 0 1em;
+        }
+        .back-link a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px dotted #94a3b8;
+        }
+        /* Twikoo 评论区容器 */
+        #twikoo {
+            margin-top: 2.5em;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 25px 18px; }
+            h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>道生态</h1>
+        <div class="sub">Dao Sheng Tai · 统一窗口</div>
+
+        <div class="intro">
+            <p><strong>道生态</strong> 是我们共同交流、寻找新方向的地方。</p>
+            <p>无论您来自哪个行业，对“道”的哲学、生态建设有何见解或疑问，都欢迎在此留下您的想法。</p>
+            <p>这条道路前所未有，我们愿与各界朋友一同探索、共建。</p>
+        </div>
+
+        <div class="notice">
+            💬 现在您可以直接留言，无需任何账号。我们珍视每一条真诚的建议。
+        </div>
+
+        <!-- Twikoo 评论区 -->
+        <div id="twikoo"></div>
+        <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.all.min.js"></script>
+        <script>
+            twikoo.init({
+                envId: 'daoshiliu-6ggdemuo0b4ebbe0',  // 您的腾讯云环境ID
+                el: '#twikoo'
+            });
+        </script>
+
+        <div class="back-link">
+            <a href="https://daozhongdao.org" target="_blank">返回道中道官网</a>
+        </div>
+
+        <div class="footer">
+            <p>道生态 · 开放共建 共探新路</p>
+        </div>
+    </div>
+</body>
+</html>
